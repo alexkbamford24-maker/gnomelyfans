@@ -1,0 +1,269 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    color: #222;
+}
+
+
+/* HEADER */
+
+header {
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    padding: 18px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.tagline {
+    color: #777;
+}
+
+
+/* MAIN PAGE */
+
+main {
+    max-width: 700px;
+    margin: 40px auto;
+}
+
+
+/* PROFILE */
+
+.profile {
+    background-color: white;
+    text-align: center;
+    padding: 35px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+}
+
+.profile-picture {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #eee;
+}
+
+.profile h1 {
+    margin-bottom: 5px;
+}
+
+.verified {
+    color: #168de2;
+}
+
+.username {
+    color: #888;
+    margin-top: 0;
+}
+
+.bio {
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+
+/* STATS */
+
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin: 25px 0;
+}
+
+.stats div {
+    display: flex;
+    flex-direction: column;
+}
+
+.stats strong {
+    font-size: 20px;
+}
+
+.stats span {
+    color: #888;
+    font-size: 14px;
+}
+
+
+/* BUTTON */
+
+button {
+    background-color: #222;
+    color: white;
+    border: none;
+    padding: 14px 35px;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #444;
+}
+
+
+/* POSTS */
+
+.post {
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+    margin-bottom: 25px;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+.post-header p {
+    margin: 3px 0 0;
+    color: #888;
+    font-size: 14px;
+}
+
+.small-profile-picture {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+
+.post-text {
+    padding: 0 15px 10px;
+    font-size: 17px;
+}
+
+.post-image {
+    width: 100%;
+    display: block;
+}
+
+.post-footer {
+    padding: 15px;
+    font-weight: bold;
+}
+#subscriptionMessage {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #555;
+}
+/* PAYMENT POPUP */
+
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.65);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-box {
+    position: relative;
+    background-color: white;
+    width: 380px;
+    max-width: 90%;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.popup-box h2 {
+    margin-top: 0;
+}
+
+.popup-price {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.payment-summary {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    margin: 20px 0;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    background: none;
+    color: #777;
+    padding: 0;
+    font-size: 28px;
+}
+
+.close-button:hover {
+    background: none;
+    color: black;
+}
+
+.confirm-button {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.decline-button {
+    width: 100%;
+    background-color: #e7e7e7;
+    color: #333;
+}
+
+.decline-button:hover {
+    background-color: #d5d5d5;
+}
+
+.report-button {
+    margin-top: 10px;
+    background-color: transparent;
+    color: #777;
+    border: 1px solid #ccc;
+}
+
+.online-status {
+    color: #5f9e6e;
+    font-size: 14px;
+    margin-top: -5px;
+    margin-bottom: 15px;
+}
+
+.online-dot {
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    background-color: #5f9e6e;
+    border-radius: 50%;
+    margin-right: 6px;
+}
+.report-button:hover {
+    background-color: #eee;
+    color: #333;
+}

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GnomelyFans</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="icon" type="image/png" href="images/belvo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">GnomelyFans</div>
+        <div class="tagline">Premium Gnome Content</div>
+    </header>
+
+
+    <main>
+
+        <section class="profile">
+
+            <img src="images/belvo.png" class="profile-picture">
+
+            <h1>Belvo <span class="verified">✓</span></h1>
+
+            <p class="username">@Belvo</p>
+	   
+ <p class="online-status">
+    <span class="online-dot"></span>
+    Online in Goldshire
+</p>
+            <p class="bio">
+                Moon Guard's premier gnome content creator.<br>
+                
+            </p>
+
+            <div class="stats">
+
+                <div>
+                    <strong>4.2K</strong>
+                    <span>Followers</span>
+                </div>
+
+                <div>
+                    <strong>69</strong>
+                    <span>Posts</span>
+                </div>
+
+                <div>
+                    <strong>3g</strong>
+                    <span>Subscription</span>
+                </div>
+
+            </div>
+<button id="subscribeButton">Subscribe — 3 Gold</button>
+
+<p id="subscriptionMessage"></p>
+
+<button id="reportButton" class="report-button">
+    Report Belvo
+
+<div id="paymentPopup" class="popup-overlay">
+
+    <div class="popup-box">
+
+        <button id="closePopup" class="close-button">×</button>
+
+        <h2>Subscribe to Belvo</h2>
+
+        <p class="popup-price">3 Gold / month</p>
+
+        <p>
+            Gain access to premium gnome content. 
+            No refunds.
+        </p>
+
+        <div class="payment-summary">
+            <span>Monthly subscription</span>
+            <strong>3g</strong>
+        </div>
+
+        <button id="confirmSubscribe" class="confirm-button">
+            Pay 3 Gold
+        </button>
+
+        <button id="declineSubscribe" class="decline-button">
+            I cannot financially support this gnome
+        </button>
+
+    </div>
+
+</div>
+
+<div id="reportPopup" class="popup-overlay">
+
+    <div class="popup-box">
+
+        <button id="closeReportPopup" class="close-button">×</button>
+
+        <h2>Report Belvo</h2>
+
+        <p>
+            Are you sure you want to report this creator?
+        </p>
+
+        <button id="submitReport" class="confirm-button">
+            Submit Report
+        </button>
+
+        <button id="cancelReport" class="decline-button">
+            Nevermind
+        </button>
+
+    </div>
+
+</div>
+        </section>
+
+
+        <section class="feed">
+
+            <div class="post">
+
+                <div class="post-header">
+
+                    <img src="images/belvo.png" class="small-profile-picture">
+
+                    <div>
+                        <strong>Belvo ✓</strong>
+                        <p>@Belvo</p>
+                    </div>
+
+                </div>
+
+                <p class="post-text">
+                    You asked. I delivered.
+                </p>
+
+                <img src="images/post1.png" class="post-image">
+
+                <div class="post-footer">
+                    ❤️ 4,391 likes
+                </div>
+    		</div>
+
+		<div class="post">
+		<p class="post-text">
+       		 Premium subscribers said they wanted more.
+        	I fear they may have made a terrible mistake.
+    		</p>
+
+    		<img src="images/post2.png" class="post-image">
+
+    		<div class="post-footer">
+       		 ❤️ 6,942 likes
+            </div>
+
+        </section>
+
+    </main>
+<footer>
+    <p>
+        GnomelyFans is an unofficial parody/fan site.
+        Not affiliated with or endorsed by Blizzard Entertainment or OnlyFans.
+    </p>
+
+    <p>
+        World of Warcraft and related names are trademarks of Blizzard Entertainment.
+    </p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

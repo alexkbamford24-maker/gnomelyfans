@@ -16,8 +16,8 @@ closePopup.addEventListener("click", function() {
 declineSubscribe.addEventListener("click", function() {
     paymentPopup.style.display = "none";
 
-    subscriptionMessage.textContent =
-        "Lmao, get your money up.";
+subscriptionMessage.textContent =
+    declineSubscribe.dataset.message;
 });
 
 confirmSubscribe.addEventListener("click", function() {

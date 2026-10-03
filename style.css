@@ -267,3 +267,67 @@ button:hover {
     background-color: #eee;
     color: #333;
 }
+/* HOMEPAGE */
+
+.home-intro {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.home-intro h1 {
+    margin-bottom: 8px;
+}
+
+.home-intro p {
+    color: #777;
+}
+
+.creator-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.creator-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: #222;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.creator-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 22px rgba(0,0,0,0.14);
+}
+
+.creator-picture {
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #eee;
+}
+
+.creator-card h2 {
+    margin-bottom: 5px;
+}
+
+.creator-card p {
+    margin-top: 0;
+    color: #888;
+}
+
+.creator-status {
+    color: #5f9e6e;
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+    .creator-grid {
+        grid-template-columns: 1fr;
+    }
+}

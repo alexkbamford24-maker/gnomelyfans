@@ -4,171 +4,56 @@
     <title>GnomelyFans</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link rel="icon" type="image/png" href="images/Belvo.png">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header>
-        <div class="logo">GnomelyFans</div>
-        <div class="tagline">Premium Gnome Content</div>
-    </header>
+<header>
+    <div class="logo">GnomelyFans</div>
+    <div class="tagline">Premium Azerothian Content</div>
+</header>
+
+<main>
+
+    <section class="home-intro">
+        <h1>Featured Creators</h1>
+        <p>Choose your regrettable subscription.</p>
+    </section>
+
+    <section class="creator-grid">
+
+        <a href="belvo.html" class="creator-card">
+            <img src="images/Belvo.png" class="creator-picture">
+
+            <h2>Belvo ✓</h2>
+            <p>@Belvo</p>
+
+            <span class="creator-status">
+                <span class="online-dot"></span>
+                Online in Goldshire
+            </span>
+        </a>
 
 
-    <main>
+        <a href="sylfie.html" class="creator-card">
+            <img src="images/Sylfie.png" class="creator-picture">
 
-        <section class="profile">
+            <h2>Sylfie ✓</h2>
+            <p>@Sylfie</p>
 
-            <img src="images/Belvo.png" class="profile-picture">
+            <span class="creator-status">
+                <span class="online-dot"></span>
+                Online
+            </span>
+        </a>
 
-            <h1>Belvo <span class="verified">✓</span></h1>
+    </section>
 
-            <p class="username">@Belvo</p>
-	   
- <p class="online-status">
-    <span class="online-dot"></span>
-    Online in Goldshire
-</p>
-            <p class="bio">
-                Moon Guard's premier gnome content creator.<br>
-                
-            </p>
+</main>
 
-            <div class="stats">
-
-                <div>
-                    <strong>4.2K</strong>
-                    <span>Followers</span>
-                </div>
-
-                <div>
-                    <strong>69</strong>
-                    <span>Posts</span>
-                </div>
-
-                <div>
-                    <strong>3g</strong>
-                    <span>Subscription</span>
-                </div>
-
-            </div>
-<button id="subscribeButton">Subscribe — 3 Gold</button>
-
-<p id="subscriptionMessage"></p>
-
-<button id="reportButton" class="report-button">
-    Report Belvo
-</button>
-<div id="paymentPopup" class="popup-overlay">
-
-    <div class="popup-box">
-
-        <button id="closePopup" class="close-button">×</button>
-
-        <h2>Subscribe to Belvo</h2>
-
-        <p class="popup-price">3 Gold / month</p>
-
-        <p>
-            Gain access to premium gnome content. 
-            No refunds.
-        </p>
-
-        <div class="payment-summary">
-            <span>Monthly subscription</span>
-            <strong>3g</strong>
-        </div>
-
-        <button id="confirmSubscribe" class="confirm-button">
-            Pay 3 Gold
-        </button>
-
-        <button id="declineSubscribe" class="decline-button">
-            I cannot financially support this gnome
-        </button>
-
-    </div>
-
-</div>
-
-<div id="reportPopup" class="popup-overlay">
-
-    <div class="popup-box">
-
-        <button id="closeReportPopup" class="close-button">×</button>
-
-        <h2>Report Belvo</h2>
-
-        <p>
-            Are you sure you want to report this creator?
-        </p>
-
-        <button id="submitReport" class="confirm-button">
-            Submit Report
-        </button>
-
-        <button id="cancelReport" class="decline-button">
-            Nevermind
-        </button>
-
-    </div>
-
-</div>
-        </section>
-
-
-        <section class="feed">
-
-            <div class="post">
-
-                <div class="post-header">
-
-                    <img src="images/Belvo.png" class="small-profile-picture">
-
-                    <div>
-                        <strong>Belvo ✓</strong>
-                        <p>@Belvo</p>
-                    </div>
-
-                </div>
-
-                <p class="post-text">
-                    You asked. I delivered.
-                </p>
-
-                <img src="images/post1.png" class="post-image">
-
-                <div class="post-footer">
-                    ❤️ 4,391 likes
-                </div>
-    		</div>
-
-		<div class="post">
-			<div class="post-header">
-
-    <img src="images/Belvo.png" class="small-profile-picture">
-
-    <div>
-        <strong>Belvo ✓</strong>
-        <p>@Belvo</p>
-    </div>
-
-</div>
-		<p class="post-text">
-       		 Throwing it back Gnomeregan style.
-    		</p>
-
-    		<img src="images/post2.png" class="post-image">
-
-    		<div class="post-footer">
-       		 ❤️ 6,942 likes
-            </div>
-		    </div>
-        </section>
-
-    </main>
 <footer>
     <p>
         GnomelyFans is an unofficial parody/fan site.
@@ -179,6 +64,6 @@
         World of Warcraft and related names are trademarks of Blizzard Entertainment.
     </p>
 </footer>
-<script src="script.js"></script>
+
 </body>
 </html>

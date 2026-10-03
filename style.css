@@ -331,3 +331,11 @@ button:hover {
         grid-template-columns: 1fr;
     }
 }
+footer {
+    margin-top: 100px;
+    text-align: center;
+    color: #888;
+    font-size: 13px;
+    padding: 30px 20px;
+    line-height: 1.5;
+}

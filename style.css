@@ -339,3 +339,19 @@ footer {
     padding: 30px 20px;
     line-height: 1.5;
 }
+.home-button {
+    display: inline-block;
+    margin: 20px 0 0 30px;
+    padding: 10px 18px;
+    background-color: white;
+    color: #333;
+    text-decoration: none;
+    border-radius: 25px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.home-button:hover {
+    background-color: #eee;
+}

@@ -17,7 +17,7 @@ declineSubscribe.addEventListener("click", function() {
     paymentPopup.style.display = "none";
 
     subscriptionMessage.textContent =
-        "Belvo will remember this.";
+        "Lmao, get your money up.";
 });
 
 confirmSubscribe.addEventListener("click", function() {

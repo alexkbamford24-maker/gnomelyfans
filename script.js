@@ -68,3 +68,51 @@ reportPopup.addEventListener("click", function(event) {
         reportPopup.style.display = "none";
     }
 });
+
+const messageButton = document.getElementById("messageButton");
+const messagePopup = document.getElementById("messagePopup");
+const closeMessagePopup = document.getElementById("closeMessagePopup");
+const messageForm = document.getElementById("messageForm");
+const messageStatus = document.getElementById("messageStatus");
+
+messageButton.addEventListener("click", function() {
+    messagePopup.style.display = "flex";
+});
+
+closeMessagePopup.addEventListener("click", function() {
+    messagePopup.style.display = "none";
+});
+
+messagePopup.addEventListener("click", function(event) {
+    if (event.target === messagePopup) {
+        messagePopup.style.display = "none";
+    }
+});
+
+messageForm.addEventListener("submit", async function(event) {
+    event.preventDefault();
+
+    messageStatus.textContent = "Sending...";
+
+    const formData = new FormData(messageForm);
+
+    try {
+        const response = await fetch(messageForm.action, {
+            method: "POST",
+            body: formData,
+            headers: {
+                "Accept": "application/json"
+            }
+        });
+
+        if (response.ok) {
+            messageForm.reset();
+            messageStatus.textContent = "Message sent to Belvo ✓";
+        } else {
+            messageStatus.textContent = "Message failed to send. Try again.";
+        }
+
+    } catch (error) {
+        messageStatus.textContent = "Message failed to send. Try again.";
+    }
+});

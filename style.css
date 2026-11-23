@@ -355,3 +355,46 @@ footer {
 .home-button:hover {
     background-color: #eee;
 }
+
+/* MESSAGING */
+
+.message-button {
+    margin-top: 10px;
+    background-color: #222;
+}
+
+.message-form {
+    text-align: left;
+}
+
+.message-form label {
+    display: block;
+    margin: 15px 0 6px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.message-form input,
+.message-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+
+.message-form textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+.message-form .confirm-button {
+    margin-top: 18px;
+}
+
+#messageStatus {
+    text-align: center;
+    font-weight: bold;
+    color: #555;
+}

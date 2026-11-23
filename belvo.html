@@ -57,7 +57,65 @@
 <button id="subscribeButton">Subscribe — 3 Gold</button>
 
 <p id="subscriptionMessage"></p>
+<button id="messageButton" class="message-button">
+    Message Belvo
+</button>
 
+<div id="messagePopup" class="popup-overlay">
+
+    <div class="popup-box">
+
+        <button id="closeMessagePopup" class="close-button" type="button">×</button>
+
+        <h2>Message Belvo</h2>
+
+        <form
+            id="messageForm"
+            class="message-form"
+            action="https://formspree.io/f/xoedpkbb"
+            method="POST"
+        >
+
+            <input type="hidden" name="recipient" value="Belvo">
+
+            <label for="messageName">Your name</label>
+            <input
+                id="messageName"
+                type="text"
+                name="name"
+                maxlength="100"
+                required
+            >
+
+            <label for="messageEmail">Your email</label>
+            <input
+                id="messageEmail"
+                type="email"
+                name="email"
+                required
+            >
+
+            <label for="messageText">Message</label>
+            <textarea
+                id="messageText"
+                name="message"
+                maxlength="2000"
+                required
+            ></textarea>
+
+            <button type="submit" class="confirm-button">
+                Send Message
+            </button>
+
+            <p id="messageStatus"></p>
+
+        </form>
+
+    </div>
+
+</div>
+
+<button id="reportButton" class="report-button">
 <button id="reportButton" class="report-button">
     Report Belvo
 </button>

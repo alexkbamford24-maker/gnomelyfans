@@ -107,7 +107,8 @@ messageForm.addEventListener("submit", async function(event) {
 
         if (response.ok) {
             messageForm.reset();
-            messageStatus.textContent = "Message sent to Belvo ✓";
+            const recipient = messageForm.querySelector('input[name="recipient"]').value;
+messageStatus.textContent = `Message sent to ${recipient} ✓`;
         } else {
             messageStatus.textContent = "Message failed to send. Try again.";
         }
@@ -116,3 +117,4 @@ messageForm.addEventListener("submit", async function(event) {
         messageStatus.textContent = "Message failed to send. Try again.";
     }
 });
+
